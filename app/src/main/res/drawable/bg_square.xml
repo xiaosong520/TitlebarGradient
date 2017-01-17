@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 圆角 灰色 无点击变色 -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item >
+        <shape>
+            <solid android:color="@color/color_white" />
+
+           <stroke android:color="@color/color_light_gray"
+                   android:width="0.8dp"/>
+
+        </shape>
+    </item>
+
+</layer-list>

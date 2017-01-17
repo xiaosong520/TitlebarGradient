@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_square"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_gravity="center"
+            android:drawableTop="@mipmap/ic_help"
+            android:drawablePadding="2dp"
+            android:text="客服"
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_square"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_gravity="center"
+            android:drawableTop="@mipmap/ic_market"
+            android:drawablePadding="2dp"
+            android:text="店铺"
+            android:textSize="11sp"/>
+
+        <TextView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_square"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_gravity="center"
+            android:drawableTop="@mipmap/ic_collection"
+            android:drawablePadding="2dp"
+            android:text="收藏"
+            android:textSize="11sp"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:background="@color/color_orange"
+            android:gravity="center"
+            android:text="加入购物车"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:background="@color/color_red"
+            android:gravity="center"
+            android:text="立即购买"
+            android:textColor="@android:color/white"/>
+
+</LinearLayout>

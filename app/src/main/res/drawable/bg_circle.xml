@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 圆角 灰色 无点击变色 -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item >
+        <shape>
+            <solid android:color="@color/color_dark_transparent" />
+            <corners
+                android:radius="90dp" />
+
+        </shape>
+    </item>
+
+</layer-list>
