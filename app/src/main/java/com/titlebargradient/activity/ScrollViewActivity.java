@@ -57,11 +57,13 @@ public class ScrollViewActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        //滑动事件回调监听（一次滑动的过程一般会连续触发多次）
+
+        //获取dimen属性中 标题和头部图片的高度
         final float title_height = getResources().getDimension(R.dimen.title_height);
         final float head_height = getResources().getDimension(R.dimen.head_height);
 
-        scrollView.setOnScrollListener(new ObservableScrollView.ScrollViewListener() {//接口回调监听
+        //滑动事件回调监听（一次滑动的过程一般会连续触发多次）
+        scrollView.setOnScrollListener(new ObservableScrollView.ScrollViewListener() {
             @Override
             public void onScroll(int oldy, int dy, boolean isUp) {
                /* DensityUtil Density = new DensityUtil();
@@ -75,8 +77,7 @@ public class ScrollViewActivity extends AppCompatActivity {
                     HeaderTranslate(dy);//图片视差平移
 
                 } else if (!isUp && dy > move_distance) {//手指往上滑,距离超过200dp
-                    TitleAlphaChange(1, 1);//设置不透明百分比为100%，防止因滑动速度过快，
-                                          // 导致距离超过150dp,而标题栏透明度却还没变成完全不透的情况。
+                    TitleAlphaChange(1, 1);//设置不透明百分比为100%，防止因滑动速度过快，导致距离超过200dp,而标题栏透明度却还没变成完全不透的情况。
 
                     HeaderTranslate(dy);//图片视差平移
 
@@ -110,6 +111,8 @@ public class ScrollViewActivity extends AppCompatActivity {
     private void TitleAlphaChange(int dy, float mHeaderHeight_px) {//设置标题栏透明度变化
         float percent = (float) Math.abs(dy) / Math.abs(mHeaderHeight_px);
         //如果是设置背景透明度，则传入的参数是int类型，取值范围0-255
+        //如果是设置控件透明度，传入的参数是float类型，取值范围0.0-1.0
+        //这里我们是设置背景透明度就好，因为设置控件透明度的话，返回ICON等也会变成透明的。
         //alpha 值越小越透明
         int alpha = (int) (percent * 255);
         toolbar.getBackground().setAlpha(alpha);//设置控件背景的透明度，传入int类型的参数（范围0~255）
@@ -117,7 +120,6 @@ public class ScrollViewActivity extends AppCompatActivity {
         ivBack.getBackground().setAlpha(255 - alpha);
         ivMore.getBackground().setAlpha(255 - alpha);
         ivShoppingCart.getBackground().setAlpha(255 - alpha);
-
     }
 
     @OnClick({R.id.iv_back, R.id.iv_shopping_cart, R.id.iv_more})
