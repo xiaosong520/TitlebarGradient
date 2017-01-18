@@ -79,7 +79,7 @@ public class ScrollViewActivity extends AppCompatActivity {
                 } else if (!isUp && dy > move_distance) {//手指往上滑,距离超过200dp
                     TitleAlphaChange(1, 1);//设置不透明百分比为100%，防止因滑动速度过快，导致距离超过200dp,而标题栏透明度却还没变成完全不透的情况。
 
-                    HeaderTranslate(dy);//图片视差平移
+                    HeaderTranslate(head_height);//这里也设置平移，是因为不设置的话，如果滑动速度过快，会导致图片没有完全隐藏。
 
                     ivBack.setImageResource(R.mipmap.ic_back_dark);
                     ivMore.setImageResource(R.mipmap.ic_more_dark);
