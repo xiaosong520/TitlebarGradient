@@ -65,7 +65,7 @@ public class ScrollViewActivity extends AppCompatActivity {
             @Override
             public void onScroll(int oldy, int dy, boolean isUp) {
                /* DensityUtil Density = new DensityUtil();
-                int mHeaderHeight_px = Density.dip2px(ScrollViewActivity.this, 150.0f);*/
+                int mHeaderHeight_px = Density.dip2px(ScrollViewActivity.this, 200.0f);*/
 
                 float move_distance = head_height - title_height;
                 if (!isUp && dy <= move_distance) {//手指往上滑,距离未超过200dp
@@ -74,7 +74,7 @@ public class ScrollViewActivity extends AppCompatActivity {
                     TitleAlphaChange(dy, move_distance);//标题栏渐变
                     HeaderTranslate(dy);//图片视差平移
 
-                } else if (!isUp && dy > move_distance) {//手指往上滑,距离超过150dp
+                } else if (!isUp && dy > move_distance) {//手指往上滑,距离超过200dp
                     TitleAlphaChange(1, 1);//设置不透明百分比为100%，防止因滑动速度过快，
                                           // 导致距离超过150dp,而标题栏透明度却还没变成完全不透的情况。
 
@@ -85,10 +85,10 @@ public class ScrollViewActivity extends AppCompatActivity {
                     ivShoppingCart.setImageResource(R.mipmap.ic_shopping_dark);
                     spiteLine.setVisibility(View.VISIBLE);
 
-                } else if (isUp && dy > move_distance) {//返回顶部，但距离头部位置大于150dp
+                } else if (isUp && dy > move_distance) {//返回顶部，但距离头部位置大于200dp
                     //不做处理
 
-                } else if (isUp && dy <= move_distance) {//返回顶部，但距离头部位置小于150dp
+                } else if (isUp && dy <= move_distance) {//返回顶部，但距离头部位置小于200dp
                     //标题栏逐渐从不透明变成透明
                     TitleAlphaChange(dy, move_distance);//标题栏渐变
                     HeaderTranslate(dy);//图片视差平移
