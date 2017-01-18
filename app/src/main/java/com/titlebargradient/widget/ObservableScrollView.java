@@ -37,10 +37,10 @@ public class ObservableScrollView extends ScrollView {
         super.onScrollChanged(x, y, oldx, oldy);
         if (scrollViewListener != null) {
 
-            if (oldy < y ) {// 控件向上滑动，屏幕内容下滑
+            if (oldy < y ) {// 手指向上滑动，屏幕内容下滑
                 scrollViewListener.onScroll(oldy,y,false);
 
-            } else if (oldy > y ) {// 向下滑动，屏幕内容上滑
+            } else if (oldy > y ) {// 手指向下滑动，屏幕内容上滑
                 scrollViewListener.onScroll(oldy,y,true);
             }
 
