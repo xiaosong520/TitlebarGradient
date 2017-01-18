@@ -19,13 +19,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingTop="200dp">
+                android:paddingTop="250dp">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:padding="8dp"
-                    android:textSize="20dp"
+                    android:textSize="20sp"
                     android:lineSpacingExtra="10dp"
                     android:text="@string/TextContent"
                     android:gravity="center"/>
@@ -36,7 +36,7 @@
 
     <LinearLayout
         android:id="@+id/lv_header"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
@@ -45,6 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/head_height"
             android:scaleType="centerCrop"
+            android:layout_gravity="center"
             android:src="@mipmap/bg_header"/>
     </LinearLayout>
 
