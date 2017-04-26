@@ -66,8 +66,6 @@ public class ScrollViewActivity extends AppCompatActivity {
         scrollView.setOnScrollListener(new ObservableScrollView.ScrollViewListener() {
             @Override
             public void onScroll(int oldy, int dy, boolean isUp) {
-               /* DensityUtil Density = new DensityUtil();
-                int mHeaderHeight_px = Density.dip2px(ScrollViewActivity.this, 200.0f);*/
 
                 float move_distance = head_height - title_height;
                 if (!isUp && dy <= move_distance) {//手指往上滑,距离未超过200dp
