@@ -1,7 +1,7 @@
 ## TitlebarGradient
 [![API](https://img.shields.io/badge/API-9%2B-brightgreen.svg)](https://android-arsenal.com/api?level=9) 
 [![Jenkins](https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg)](https://github.com/xiaosong520/TitlebarGradient.git)
-[![Crates.io](https://img.shields.io/crates/d/rustc-serialize.svg)](https://github.com/xiaosong520/TitlebarGradient/archive/master.zip)
+[![Crates.io](https://img.shields.io/badge/download-3M-brightgreen.svg)](https://github.com/xiaosong520/TitlebarGradient/archive/master.zip)
 [![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)]()
 
 ### Show some :heart: and :stars: the repo to support the project
