@@ -4,17 +4,18 @@
 [![Crates.io](https://img.shields.io/badge/download-3M-brightgreen.svg)](https://github.com/xiaosong520/TitlebarGradient/archive/master.zip)
 [![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)]()
 
----
-### Show some :heart: and :stars: the repo to support the project
+#### Show some :heart: and :stars: the repo to support the project
 
 [![GitHub stars](https://img.shields.io/github/stars/xiaosong520/TitlebarGradient.svg?style=social)](https://github.com/xiaosong520/TitlebarGradient/stargazers) [![GitHub forks](https://img.shields.io/github/forks/xiaosong520/TitlebarGradient.svg?style=social)](https://github.com/xiaosong520/TitlebarGradient/network) [![GitHub watchers](https://img.shields.io/github/watchers/xiaosong520/TitlebarGradient.svg?style=social)](https://github.com/xiaosong520/TitlebarGradient/watchers) [![GitHub followers](https://img.shields.io/github/followers/xiaosong520.svg?style=social)](https://github.com/xiaosong520/followers) 
 ---
+
 ### 仿淘宝购物详情页，实现的功能：
 1. 标题栏透明度渐变
 2. Icon背景渐变
 3. 标题栏透明度改变时Icon颜色替换
 4. 图片滑动视差效果
 
+### 实现效果图：
 ![image](https://github.com/xiaosong520/TitlebarGradient/blob/master/preview/preview.gif)
 
 
