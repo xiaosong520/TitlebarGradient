@@ -19,7 +19,7 @@
 ![image](https://github.com/xiaosong520/TitlebarGradient/blob/master/preview/preview.gif)
 
 
-### 个人博客
+### CSDN博客详解
 [![CSDN博客地址](https://img.shields.io/badge/CSDN%E5%8D%9A%E5%AE%A2%E5%9C%B0%E5%9D%80-http%3A%2F%2Fblog.csdn.net-red.svg?style=plastic)](http://blog.csdn.net/qq_22393017/article/details/54602925)
 
 
